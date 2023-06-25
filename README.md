@@ -1,2 +1,2 @@
-# course_paper
+# Course paper.
 Here lies my coursework code.
