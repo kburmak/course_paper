@@ -3,7 +3,8 @@ from tqdm import tqdm
 
 def seq_str_cleaned(x):
     symbols = ['G', 'A', 'S', 'P', 'V', 'T', 'C', 'L', 'I', 'N', 'D', 'Q', 'K', 'E', 'M',
-     'H', 'F', 'U', 'R', 'Y', 'W', 'S[79.96]', 'T[79.96]',
+     'H', 'F', #'U',
+               'R', 'Y', 'W', 'S[79.96]', 'T[79.96]',
      'Y[79.96]', 'M[15.99]', 'C[57.02]', 'K[42.01]', 'K[229.16]']
     e_str = str(x) if str(x)!='nan' else ""
     e_str_cleaned = "".join([i for i in e_str if i in symbols+['']])
@@ -22,7 +23,7 @@ def seqlist(pre, seq, post, n_m, n_results):
         "I": 113.084064015,
         "N": 114.042927470,
         "D": 115.026943065,
-        "Q": 128.058577540,
+        #"Q": 128.058577540,
         "K": 128.094963050,
         "E": 129.042593135,
         "M": 131.040484645,
