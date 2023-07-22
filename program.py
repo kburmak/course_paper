@@ -1,6 +1,7 @@
 import pandas as pd
 from tqdm import tqdm
 
+
 def seq_str_cleaned(x):
     symbols = ['G', 'A', 'S', 'P', 'V', 'T', 'C', 'L', 'I', 'N', 'D', 'Q', 'K', 'E', 'M',
      'H', 'F', 'U', 'R', 'Y', 'W', 'S[79.96]', 'T[79.96]',
